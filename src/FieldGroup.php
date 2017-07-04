@@ -99,6 +99,8 @@ class FieldGroup
     }
 
     /**
+     * @todo add support for multiple locations with operators
+     *
      * @param $param
      * @param $operator
      * @param $value

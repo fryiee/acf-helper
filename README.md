@@ -59,8 +59,22 @@ TBA List of field type slugs.
  
 TBA List of arguments for each field type.
 
+#### Helper::enqueue($fieldGroup)
+This static method enqueues the field group using ACF's built in `acf_add_local_field_group()`. It takes an instance of 
+`\Fryiee\ACF\FieldGroup` as an argument.
+
 ### FieldGroup
-TBA.
+#### $fieldGroup->addLocation($param, $operator, $value)
+This method adds a location parameter to the field group.
+
+TBA Add support for multiple locations
+
+#### $fieldGroup->addField($field)
+This method adds a field to the field group. It takes an instance of `\Fryiee\ACF\Field` as an argument.
+
+#### $fieldGroup->generate()
+TBA
 
 ### Field
-TBA.
+#### $field->generate()
+TBA
