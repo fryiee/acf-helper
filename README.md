@@ -54,11 +54,11 @@ empty. This can be overrided by providing a `'name'` attribute in the $args arra
 
 TBA List of field type slugs.
 
-*REMINDER: Changing your field's title or key suffix will mean that existing data is no longer connected unless 
- it is altered in the database.*
- 
- The `$args` argument takes any of the existing arguments for fields. See here: 
- https://www.advancedcustomfields.com/resources/register-fields-via-php/
+*REMINDER: Changing your field's label or key suffix will mean that existing data is no longer 
+connected unless it is altered in the database.*
+
+The `$args` argument takes any of the existing arguments for fields. See here: 
+https://www.advancedcustomfields.com/resources/register-fields-via-php/
  
 TBA List of arguments for each field type.
 
