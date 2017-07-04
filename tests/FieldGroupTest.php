@@ -19,11 +19,7 @@ class FieldGroupTest extends PHPUnit_Framework_TestCase {
 
         $fieldGroup = new FieldGroup('Test Field Group', '12345', []);
 
-        $fieldGroup->addLocation([
-            'param' => 'post_type',
-            'operator' => '==',
-            'value' => 'post'
-        ]);
+        $fieldGroup->addLocation('post_type','==','post');
 
         $generatedArray = $fieldGroup->generate();
 

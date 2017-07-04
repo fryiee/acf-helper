@@ -67,7 +67,7 @@ class FieldGroup
         $result = [
             'key' => $this->getKey(),
             'title' => $this->getTitle(),
-            'location' => $this->getLocation(),
+            'location' => $this->getLocations(),
         ];
 
         /* add any user set args */
@@ -98,21 +98,39 @@ class FieldGroup
         }
     }
 
-    public function addLocation($location)
+    /**
+     * @param $param
+     * @param $operator
+     * @param $value
+     */
+    public function addLocation($param, $operator, $value)
     {
-        $this->location[][] = $location;
+        array_push($this->location, [[
+            'param' => $param,
+            'operator' => $operator,
+            'value' => $value
+        ]]);
     }
 
-    public function getLocation()
+    /**
+     * @return array
+     */
+    public function getLocations()
     {
         return $this->location;
     }
 
+    /**
+     * @param $args
+     */
     public function setArgs($args)
     {
         $this->args = $args;
     }
 
+    /**
+     * @return array
+     */
     public function getArgs()
     {
         return $this->args;
