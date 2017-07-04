@@ -9,11 +9,12 @@ class Helper
     /**
      * @param $title
      * @param string $keySuffix
+     * @param array
      * @return FieldGroup
      */
-    public static function createFieldGroup($title, $keySuffix = '')
+    public static function createFieldGroup($title, $keySuffix = '', $args = [])
     {
-        return new FieldGroup($title, $keySuffix);
+        return new FieldGroup($title, $keySuffix, $args);
     }
 
     /**
