@@ -34,7 +34,7 @@ trait UsesKeys
     private function slugifyWord($word)
     {
         $slug = trim($word);
-        $slug = preg_replace('/[^0-9a-zA-Z_]/', '', $slug);
+        $slug = preg_replace('/[^0-9a-zA-Z_\s]/', '', $slug);
         return str_replace(' ', '_', strtolower($slug));
     }
 }
