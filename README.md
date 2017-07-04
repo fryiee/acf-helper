@@ -35,10 +35,13 @@ ACFHelper::enqueue($fieldGroup);
 The `\Fryiee\ACF\Helper` package is the main entry point of the Helper package. This is where you will generate all your 
 field groups and fields, as well as enqueue them.
 
-#### Helper::createFieldGroup($title, $keySuffix = '');
+#### Helper::createFieldGroup($title, $keySuffix = '', $args = []);
 This static method creates an instance of `\Fryiee\ACF\FieldGroup`. It takes the title of the Field Group as an 
-argument, and optionally a key suffix. By default, the helper class will set the field group's key to 
-`group_slugified_title`, with the key suffix being added if it is not empty. 
+argument, optionally a key suffix, and optionally additional arguments. By default, the helper class will set the field 
+group's key to `group_slugified_title`, with the key suffix being added if it is not empty. 
+
+The `$args` argument takes any of the existing arguments for fields. See here: 
+ https://www.advancedcustomfields.com/resources/register-fields-via-php/
 
 *REMINDER: Changing your field group's title or key suffix will mean that existing data is no longer connected unless 
  it is altered in the database.*
