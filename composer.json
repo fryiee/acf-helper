@@ -1,0 +1,8 @@
+{
+  "name": "fryiee/acf-helper",
+  "autoload": {
+    "psr-4" : {
+      "Fryiee\\ACF" : "src"
+    }
+  }
+}
