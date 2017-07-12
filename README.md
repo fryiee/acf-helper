@@ -63,8 +63,8 @@ https://www.advancedcustomfields.com/resources/register-fields-via-php/
 TBA List of arguments for each field type.
 
 #### Helper::enqueue($fieldGroup)
-This static method enqueues the field group using ACF's built in `acf_add_local_field_group()`. It takes an instance of 
-`\Fryiee\ACF\FieldGroup` as an argument.
+This static method enqueues the field group using ACF's built in `register_field_group()` function for compatibility 
+with both ACF and ACF PRO. It takes an instance of `\Fryiee\ACF\FieldGroup` as an argument.
 
 ### FieldGroup
 #### $fieldGroup->addLocation($param, $operator, $value)

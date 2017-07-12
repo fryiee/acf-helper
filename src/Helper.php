@@ -37,8 +37,8 @@ class Helper
      */
     public static function enqueue(FieldGroup $fieldGroup)
     {
-        if( function_exists('acf_add_local_field_group') ) {
-            acf_add_local_field_group($fieldGroup->generate());
+        if( function_exists('register_field_group') ) {
+            register_field_group($fieldGroup->generate());
         } else {
             return null;
         }
