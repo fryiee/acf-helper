@@ -38,6 +38,16 @@ class FieldGroup
     {
         $this->setTitle($title);
         $this->setKey('group_' . $this->slugifyWord($title) . $keySuffix);
+
+        // Fallback protection for ACF 4.4.11 which doesn't automatically set these arguments
+        if (!isset($args['menu_order'])) {
+            $args['menu_order'] = 0;
+        }
+
+        if (!isset($args['options'])) {
+            $args['options'] = [];
+        }
+
         $this->setArgs($args);
     }
 
