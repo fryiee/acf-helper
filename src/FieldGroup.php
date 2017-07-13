@@ -109,6 +109,18 @@ class FieldGroup
     }
 
     /**
+     * @param Array $fields An array of Fields
+     */
+    public function addFields($fields)
+    {
+        if (is_array($fields)) {
+            foreach ($fields as $field) {
+                $this->addField($field);
+            }
+        }
+    }
+
+    /**
      * @todo add support for multiple locations with operators
      *
      * @param $param
