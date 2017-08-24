@@ -2,8 +2,11 @@
 
 use Fryiee\ACF\Helper;
 
-class HelperTest extends PHPUnit_Framework_TestCase {
-
+/**
+ * Class HelperTest
+ */
+class HelperTest extends PHPUnit_Framework_TestCase
+{
     public function testFieldGroupReturned()
     {
         $fieldGroup = Helper::createFieldGroup('test', '');

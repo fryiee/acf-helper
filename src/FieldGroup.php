@@ -109,7 +109,7 @@ class FieldGroup
     }
 
     /**
-     * @param Array $fields An array of Fields
+     * @param array $fields An array of Fields
      */
     public function addFields($fields)
     {

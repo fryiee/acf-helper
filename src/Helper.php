@@ -33,11 +33,11 @@ class Helper
 
     /**
      * @param FieldGroup $fieldGroup
-     * @return null
+     * @return null|void
      */
     public static function enqueue(FieldGroup $fieldGroup)
     {
-        if( function_exists('register_field_group') ) {
+        if (function_exists('register_field_group')) {
             register_field_group($fieldGroup->generate());
         } else {
             return null;
