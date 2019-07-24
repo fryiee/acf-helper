@@ -117,7 +117,8 @@ class Field implements FieldInterface
     }
 
     /**
-     * This function will be extended by the children fields. We use the abstract generator to pull in default fields that should be create.
+     * This function will be extended by the children fields.
+     * We use the abstract generator to pull in default fields that should be create.
      */
     public function generate()
     {

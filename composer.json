@@ -1,7 +1,7 @@
 {
   "name": "fryiee/acf-helper",
   "description": "A composer package for programmatically adding ACF fields to your Wordpress site.",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "authors": [
     {
       "name": "Craig Berry",

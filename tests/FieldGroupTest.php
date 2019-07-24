@@ -2,7 +2,11 @@
 
 use Fryiee\ACF\FieldGroup;
 
-class FieldGroupTest extends PHPUnit_Framework_TestCase {
+/**
+ * Class FieldGroupTest
+ */
+class FieldGroupTest extends PHPUnit_Framework_TestCase
+{
 
     public function testFieldGroupGeneration()
     {
@@ -16,10 +20,9 @@ class FieldGroupTest extends PHPUnit_Framework_TestCase {
 
     public function testAddingLocation()
     {
-
         $fieldGroup = new FieldGroup('Test Field Group', '12345', []);
 
-        $fieldGroup->addLocation('post_type','==','post');
+        $fieldGroup->addLocation('post_type', '==', 'post');
 
         $generatedArray = $fieldGroup->generate();
 

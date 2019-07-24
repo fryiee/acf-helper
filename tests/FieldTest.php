@@ -2,8 +2,11 @@
 
 use Fryiee\ACF\Field;
 
-class FieldTest extends PHPUnit_Framework_TestCase {
-
+/**
+ * Class FieldTest
+ */
+class FieldTest extends PHPUnit_Framework_TestCase
+{
     public function testFieldGeneration()
     {
         $field = new Field('test', 'Test Field', [], '12345');
