@@ -43,4 +43,32 @@ class Helper
             return null;
         }
     }
+
+    /**
+     * Given an array of ACF fields, generate sub field array for a repeater
+     * @param array $fields
+     * @return array
+     */
+    public static function generateSubFields($fields)
+    {
+        $subs = [];
+
+        foreach ($fields as $field) {
+            $subs[] = $field->generate();
+        }
+
+        return $subs;
+    }
+
+    /**
+     * @param $fields
+     * @param $label
+     * @param array $options
+     * @return bool|Field
+     */
+    public static function createRepeater($fields, $label, $options = [])
+    {
+        $options['sub_fields'] = self::generateSubFields($fields);
+        return self::createField('repeater', $label, $options);
+    }
 }
